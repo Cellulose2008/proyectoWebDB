@@ -50,6 +50,27 @@ app.post('/login', (req, res) => {
 	}
 });
 
+app.get('/perfil', (req, res) => {
+    // Supón que el usuario está en req.query.usuario (ejemplo: /perfil?usuario=Juan)
+    const usuario = req.query.usuario;
+    if (!usuario) return res.send('Usuario no especificado');
+
+    const sql = 'SELECT Nombre FROM usuario WHERE Nombre = ?';
+    db.query(sql, [usuario], (err, resultados) => {
+        if (err) throw err;
+        if (resultados.length === 0) return res.send('Usuario no encontrado');
+
+        // Renderiza el HTML con el nombre (puedes usar una plantilla o reemplazo simple)
+        const fs = require('fs');
+        fs.readFile(path.join(__dirname, 'public', 'perfil.html'), 'utf8', (err, data) => {
+            if (err) throw err;
+            // Reemplaza un marcador en el HTML por el nombre real
+            const html = data.replace('Nombre Usuario', resultados[0].Nombre);
+            res.send(html);
+        });
+    });
+});
+
 app.listen(3000,()=>{
 	console.log('Servidor corriendo en http://localhost:3000');
 });
