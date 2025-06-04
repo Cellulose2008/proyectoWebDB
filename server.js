@@ -5,6 +5,12 @@ const path = require ('path');
 const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
+
+// Redirigir al login al entrar al localhost
+app.get('/', (req, res) => {
+    res.redirect('/login.html');
+});
+
 app.post('/login', (req, res) => {
 	const { usuario, contrasena, accion } = req.body;
 
@@ -13,29 +19,29 @@ app.post('/login', (req, res) => {
 	}
 
 	if (accion === 'login') {
-		const sql = 'SELECT * FROM usuarios WHERE usuario = ? AND contrasena = ?';
+		const sql = 'SELECT * FROM usuario WHERE Nombre = ? AND Contrasena = ?';
 		db.query(sql, [usuario, contrasena], (err, resultados) => {
 			if (err) throw err;
 
 			if (resultados.length > 0) {
-				res.send('Inicio de sesión exitoso');
+				res.redirect('/proyectoWeb.html'); // Redirige al dashboard
 			} else {
 				res.send('Usuario o contraseña incorrectos');
 			}
 		});
 	} else if (accion === 'registro') {
 		// Verifica si ya existe el usuario
-		const checkSql = 'SELECT * FROM usuarios WHERE usuario = ?';
+		const checkSql = 'SELECT * FROM usuario WHERE Nombre = ?';
 		db.query(checkSql, [usuario], (err, resultados) => {
 			if (err) throw err;
 
 			if (resultados.length > 0) {
 				res.send('Nombre de usuario ya registrado');
 			} else {
-				const insertSql = 'INSERT INTO usuarios (usuario, contrasena) VALUES (?, ?)';
+				const insertSql = 'INSERT INTO usuario (Nombre, Contrasena) VALUES (?, ?)';
 				db.query(insertSql, [usuario, contrasena], (err, resultado) => {
 					if (err) throw err;
-					res.send('Registro exitoso');
+					res.redirect('/proyectoWeb.html'); // Redirige después de registrar
 				});
 			}
 		});
