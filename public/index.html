@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estilizate - Tu Guía de Estilo Personal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+    <aside class="sidebar">
+      <h1>ESTILIZATE</h1>
+      <a href="index.html" class="home-button">🏠 Inicio</a>
+      <nav>
+        <div class="menu-section">
+          <div class="dropdown-trigger">Styles</div>
+          <div class="dropdown-content">
+            <a href="casual.html">Casual</a>
+            <a href="formal.html">Formal</a>
+          </div>
+        </div>
+        
+        <div class="menu-section">
+          <div class="dropdown-trigger">Temporada</div>
+          <div class="dropdown-content">
+            <a href="primavera.html">Primavera</a>
+            <a href="verano.html">Verano</a>
+          </div>
+        </div>
+        
+        <div class="menu-section">
+          <div class="dropdown-trigger">Ocasiones</div>
+          <div class="dropdown-content">
+            <a href="trabajo.html">Trabajo</a>
+            <a href="fiesta.html">Fiesta</a>
+          </div>
+        </div>
+      </nav>
+
+      <h2>PERSONALIZA TU ESTILO</h2>
+      <div class="customize-section">
+        <div class="menu-section">
+          <div class="dropdown-trigger">Body Type</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Hourglass</span>
+            <span class="customizable-option">Rectangle</span>
+            <span class="customizable-option">Pear</span>
+            <span class="customizable-option">Apple</span>
+            <span class="customizable-option">Inverted Triangle</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Skin Color</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Light</span>
+            <span class="customizable-option">Medium</span>
+            <span class="customizable-option">Dark</span>
+            <span class="customizable-option">Olive</span>
+            <span class="customizable-option">Deep</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Height</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Petite (< 160cm)</span>
+            <span class="customizable-option">Average (160-170cm)</span>
+            <span class="customizable-option">Tall (> 170cm)</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Age Range</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Teen (13-19)</span>
+            <span class="customizable-option">Young Adult (20-30)</span>
+            <span class="customizable-option">Adult (31-45)</span>
+            <span class="customizable-option">Mature (46+)</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." />
+          <button class="voice-btn">🎤</button>
+        </div>
+        
+        <div><a href="perfil.html">
+            <img class="profile-icon" src="nevertheless.png" title="Ver tu perfil"></a>
+        </div>
+      </header>
+
+      <section class="page-header">
+        <h1>Bienvenido a Estilizate</h1>
+        <p>Tu guía personal de estilo y moda</p>
+      </section>
+
+      <section class="main-categories">
+        <div class="category-card" onclick="window.location.href='outfits.html'">
+          <img src="outfit1.jpg" alt="Outfits">
+          <h2>OUTFITS</h2>
+          <p>Descubre looks completos para cada ocasión</p>
+        </div>
+        
+        <div class="category-card" onclick="window.location.href='hairstyles.html'">
+          <img src="hairstyle1.jpg" alt="Hairstyles">
+          <h2>HAIRSTYLES</h2>
+          <p>Encuentra el peinado perfecto para ti</p>
+        </div>
+        
+        <div class="category-card" onclick="window.location.href='nails.html'">
+          <img src="nails1.jpg" alt="Nails">
+          <h2>NAILS</h2>
+          <p>Inspírate con los mejores diseños de uñas</p>
+        </div>
+        
+        <div class="category-card" onclick="window.location.href='accesories.html'">
+          <img src="accessories.jpg" alt="Accessories">
+          <h2>ACCESORIES</h2>
+          <p>Complementa tu estilo con accesorios únicos</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html> 

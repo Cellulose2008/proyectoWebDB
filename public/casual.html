@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casual - Estilizate</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+    <aside class="sidebar">
+      <h1>ESTILIZATE</h1>
+      <a href="index.html" class="home-button">🏠 Inicio</a>
+      <nav>
+        <div class="menu-section">
+          <div class="dropdown-trigger">Styles</div>
+          <div class="dropdown-content">
+            <a href="casual.html" class="active">Casual</a>
+            <a href="formal.html">Formal</a>
+          </div>
+        </div>
+        
+        <div class="menu-section">
+          <div class="dropdown-trigger">Temporada</div>
+          <div class="dropdown-content">
+            <a href="primavera.html">Primavera</a>
+            <a href="verano.html">Verano</a>
+          </div>
+        </div>
+        
+        <div class="menu-section">
+          <div class="dropdown-trigger">Ocasiones</div>
+          <div class="dropdown-content">
+            <a href="trabajo.html">Trabajo</a>
+            <a href="fiesta.html">Fiesta</a>
+          </div>
+        </div>
+      </nav>
+
+      <h2>PERSONALIZA TU ESTILO</h2>
+      <div class="customize-section">
+        <!-- Mismo contenido de personalización que proyectoWeb.html -->
+        <div class="menu-section">
+          <div class="dropdown-trigger">Body Type</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Hourglass</span>
+            <span class="customizable-option">Rectangle</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Skin Color</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Light</span>
+            <span class="customizable-option">Medium</span>
+            <span class="customizable-option">Dark</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Height</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Petite (< 160cm)</span>
+            <span class="customizable-option">Average (160-170cm)</span>
+            <span class="customizable-option">Tall (> 170cm)</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Age Range</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Teen (13-19)</span>
+            <span class="customizable-option">Young Adult (20-30)</span>
+            <span class="customizable-option">Adult (31-45)</span>
+            <span class="customizable-option">Mature (46+)</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." />
+          <button class="voice-btn">🎤</button>
+        </div>
+        
+        <div>
+          <a href="index.html" class="home-button">🏠</a>
+        </div>
+      </header>
+
+      <section class="page-header">
+        <h1>Estilo Casual</h1>
+        <p>Descubre las últimas tendencias en moda casual</p>
+      </section>
+
+      <section class="categories">
+        <button onclick="window.location.href='outfits.html'">OUTFITS</button>
+        <button onclick="window.location.href='hairstyles.html'">HAIRSTYLES</button>
+        <button onclick="window.location.href='nails.html'">NAILS</button>
+        <button onclick="window.location.href='accesories.html'">ACCESORIES</button>
+      </section>
+
+      <section class="gallery">
+        <!-- Primera fila -->
+        <div class="card"><img src="outfit1.jpg" alt="Casual 1" title="Look casual diario"></div>
+        <div class="card"><img src="nails1.jpg" alt="Casual 2" title="Combinación casual"></div>
+        <div class="card"><img src="hairstyle2.jpg" alt="Casual 3" title="Estilo street"></div>
+        <div class="card"><img src="accesorio5.jpg" alt="Casual 4" title="Accesorios casual"></div>
+        <!-- Segunda fila -->
+        <div class="card"><img src="outfit5.jpg" alt="Casual 5" title="Look bohemio"></div>
+        <div class="card"><img src="hairstyle8.jpg" alt="Casual 6" title="Casual otoño"></div>
+        <div class="card"><img src="accesorio7.jpg" alt="Casual 7" title="Casual verano"></div>
+        <div class="card"><img src="outfit8.jpg" alt="Casual 8" title="Look deportivo"></div>
+        <!-- Tercera fila -->
+        <div class="card"><img src="nails6.jpg" alt="Casual 9" title="Casual chic"></div>
+        <div class="card"><img src="hairstyle10.jpg" alt="Casual 10" title="Look urbano"></div>
+        <div class="card"><img src="accesorio9.jpg" alt="Casual 11" title="Casual primavera"></div>
+        <div class="card"><img src="outfit10.jpg" alt="Casual 12" title="Look weekend"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html> 

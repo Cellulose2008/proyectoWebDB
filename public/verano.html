@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verano - Estilizate</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+    <aside class="sidebar">
+      <h1>ESTILIZATE</h1>
+      <a href="index.html" class="home-button">🏠 Inicio</a>
+      <nav>
+        <div class="menu-section">
+          <div class="dropdown-trigger">Styles</div>
+          <div class="dropdown-content">
+            <a href="casual.html">Casual</a>
+            <a href="formal.html">Formal</a>
+          </div>
+        </div>
+        
+        <div class="menu-section">
+          <div class="dropdown-trigger">Temporada</div>
+          <div class="dropdown-content">
+            <a href="primavera.html">Primavera</a>
+            <a href="verano.html" class="active">Verano</a>
+          </div>
+        </div>
+        
+        <div class="menu-section">
+          <div class="dropdown-trigger">Ocasiones</div>
+          <div class="dropdown-content">
+            <a href="trabajo.html">Trabajo</a>
+            <a href="fiesta.html">Fiesta</a>
+          </div>
+        </div>
+      </nav>
+
+      <h2>PERSONALIZA TU ESTILO</h2>
+      <div class="customize-section">
+        <div class="menu-section">
+          <div class="dropdown-trigger">Body Type</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Hourglass</span>
+            <span class="customizable-option">Rectangle</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Skin Color</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Light</span>
+            <span class="customizable-option">Medium</span>
+            <span class="customizable-option">Dark</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Height</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Petite (< 160cm)</span>
+            <span class="customizable-option">Average (160-170cm)</span>
+            <span class="customizable-option">Tall (> 170cm)</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Age Range</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Teen (13-19)</span>
+            <span class="customizable-option">Young Adult (20-30)</span>
+            <span class="customizable-option">Adult (31-45)</span>
+            <span class="customizable-option">Mature (46+)</span>
+          </div>
+        </div>
+
+        <!-- ... resto de las opciones de personalización ... -->
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." />
+          <button class="voice-btn">🎤</button>
+        </div>
+        
+        <div><a href="perfil.html">
+            <img class="profile-icon" src="nevertheless.png" title="Ver tu perfil"></a>
+        </div>
+      </header>
+
+      <section class="page-header">
+        <h1>Colección Verano</h1>
+        <p>Estilos frescos y vibrantes para los días soleados</p>
+      </section>
+
+      <section class="categories">
+        <button onclick="window.location.href='outfits.html'">OUTFITS</button>
+        <button onclick="window.location.href='hairstyles.html'">HAIRSTYLES</button>
+        <button onclick="window.location.href='nails.html'">NAILS</button>
+        <button onclick="window.location.href='accesories.html'">ACCESORIES</button>
+      </section>
+
+      <section class="gallery">
+        <!-- Galería con imágenes de verano -->
+        <div class="card"><img src="verano1.jpg" alt="Verano 1" title="Vestido playero"></div>
+        <div class="card"><img src="verano2.png" alt="Verano 2" title="Paleta veraniega"></div>
+        <div class="card"><img src="verano3.png" alt="Verano 3" title="Look tropical"></div>
+        <div class="card"><img src="verano4.jpg" alt="Verano 4" title="Accesorios de playa"></div>
+        <div class="card"><img src="verano5.jpg" alt="Verano 5" title="Conjunto fresco"></div>
+        <div class="card"><img src="verano6.png" alt="Verano 6" title="Estilo resort"></div>
+        <div class="card"><img src="verano7.jpg" alt="Verano 7" title="Look vacacional"></div>
+        <div class="card"><img src="verano8.jpg" alt="Verano 8" title="Complementos de verano"></div>
+        <div class="card"><img src="verano9.png" alt="Verano 9" title="Estilo mediterráneo"></div>
+        <div class="card"><img src="verano10.jpg" alt="Verano 10" title="Colores brillantes"></div>
+        <div class="card"><img src="verano11.jpg" alt="Verano 11" title="Look pool party"></div>
+        <div class="card"><img src="verano12.jpg" alt="Verano 12" title="Estilo beach club"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html> 

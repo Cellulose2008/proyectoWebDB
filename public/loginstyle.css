@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.divFill{
+    background-color: rgb(192, 192, 192);
+    padding-bottom: 25px;
+    padding-top: 5px;
+    width: 700px;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+label{
+    margin-right: 100px;
+    
+}
+
+.label2{
+    margin-right: 80px;
+}
+
+.buttonIngresar{
+    padding: 10px 27px;
+    background-color: #e7e7e7; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonRegistrar{
+    padding: 10px 27px;
+    background-color: #e7e7e7; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonIngresar:hover {
+  background-color: #04AA6D; /* Green */
+  color: white;
+}
+
+.buttonRegistrar:hover {
+  background-color: #0499aa; /* Green */
+  color: white;
+}

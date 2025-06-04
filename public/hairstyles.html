@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hairstyles - Estilizate</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+    <aside class="sidebar">
+      <h1>ESTILIZATE</h1>
+      <a href="index.html" class="home-button">🏠 Inicio</a>
+      <nav>
+        <div class="menu-section">
+          <div class="dropdown-trigger">Styles</div>
+          <div class="dropdown-content">
+            <a href="casual.html">Casual</a>
+            <a href="formal.html">Formal</a>
+            <a href="sporty.html">Sporty</a>
+            <a href="bohemian.html">Bohemian</a>
+            <a href="minimalist.html">Minimalist</a>
+          </div>
+        </div>
+        
+        <div class="menu-section">
+          <div class="dropdown-trigger">Temporada</div>
+          <div class="dropdown-content">
+            <a href="primavera.html">Primavera</a>
+            <a href="verano.html">Verano</a>
+            <a href="otono.html">Otoño</a>
+            <a href="invierno.html">Invierno</a>
+          </div>
+        </div>
+        
+        <div class="menu-section">
+          <div class="dropdown-trigger">Ocasiones</div>
+          <div class="dropdown-content">
+            <a href="trabajo.html">Trabajo</a>
+            <a href="fiesta.html">Fiesta</a>
+            <a href="playa.html">Playa</a>
+            <a href="deporte.html">Deporte</a>
+            <a href="formal.html">Formal</a>
+          </div>
+        </div>
+      </nav>
+
+      <h2>PERSONALIZA TU ESTILO</h2>
+      <div class="customize-section">
+        <div class="menu-section">
+          <div class="dropdown-trigger">Body Type</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Hourglass</span>
+            <span class="customizable-option">Rectangle</span>
+            <span class="customizable-option">Pear</span>
+            <span class="customizable-option">Apple</span>
+            <span class="customizable-option">Inverted Triangle</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Skin Color</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Light</span>
+            <span class="customizable-option">Medium</span>
+            <span class="customizable-option">Dark</span>
+            <span class="customizable-option">Olive</span>
+            <span class="customizable-option">Deep</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Height</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Petite (< 160cm)</span>
+            <span class="customizable-option">Average (160-170cm)</span>
+            <span class="customizable-option">Tall (> 170cm)</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Age Range</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Teen (13-19)</span>
+            <span class="customizable-option">Young Adult (20-30)</span>
+            <span class="customizable-option">Adult (31-45)</span>
+            <span class="customizable-option">Mature (46+)</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Hair Type</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Straight</span>
+            <span class="customizable-option">Wavy</span>
+            <span class="customizable-option">Curly</span>
+            <span class="customizable-option">Coily</span>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <div class="dropdown-trigger">Hair Length</div>
+          <div class="dropdown-content">
+            <span class="customizable-option">Short</span>
+            <span class="customizable-option">Medium</span>
+            <span class="customizable-option">Long</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." />
+          <button class="voice-btn">🎤</button>
+        </div>
+        
+        <div class="header-buttons">
+          <a href="index.html" class="back-button">← Volver al inicio</a>
+          <a href="perfil.html">
+            <img class="profile-icon" src="nevertheless.png" title="Ver tu perfil">
+          </a>
+        </div>
+      </header>
+
+      <section class="page-header">
+        <h1>Peinados y Estilos</h1>
+        <p>Descubre las últimas tendencias en peinados para cada ocasión</p>
+      </section>
+
+      <section class="categories">
+        <button onclick="window.location.href='outfits.html'">OUTFITS</button>
+        <button class="active" onclick="window.location.href='hairstyles.html'">HAIRSTYLES</button>
+        <button onclick="window.location.href='nails.html'">NAILS</button>
+        <button onclick="window.location.href='accesories.html'">ACCESORIES</button>
+      </section>
+
+      <section class="gallery">
+        <!-- Galería con peinados -->
+        <div class="card"><img src="hairstyle1.jpg" alt="Hairstyle 1" title="Ondas naturales"></div>
+        <div class="card"><img src="hairstyle2.jpg" alt="Hairstyle 2" title="Recogido elegante"></div>
+        <div class="card"><img src="hairstyle3.jpg" alt="Hairstyle 3" title="Trenzas bohemias"></div>
+        <div class="card"><img src="hairstyle4.jpg" alt="Hairstyle 4" title="Bob moderno"></div>
+        <div class="card"><img src="hairstyle5.jpg" alt="Hairstyle 5" title="Updo formal"></div>
+        <div class="card"><img src="hairstyle6.jpg" alt="Hairstyle 6" title="Ondas playeras"></div>
+        <div class="card"><img src="hairstyle7.jpg" alt="Hairstyle 7" title="Coleta alta"></div>
+        <div class="card"><img src="hairstyle8.jpg" alt="Hairstyle 8" title="Trenza cascada"></div>
+        <div class="card"><img src="hairstyle9.jpg" alt="Hairstyle 9" title="Moño bajo"></div>
+        <div class="card"><img src="hairstyle10.jpg" alt="Hairstyle 10" title="Peinado fiesta"></div>
+        <div class="card"><img src="hairstyle11.jpg" alt="Hairstyle 11" title="Ondas glamour"></div>
+        <div class="card"><img src="hairstyle12.jpg" alt="Hairstyle 12" title="Trenzado corona"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html> 
