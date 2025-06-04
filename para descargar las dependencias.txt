@@ -1,0 +1,10 @@
+para descargar las dependencias:
+navegar hasta la carpeta del proyecto en CMD, y ejecutar:
+npm init -y
+npm install express mysql body-parser
+ya que estén instaladas, ejecutar:
+node server.js
+recuerda tener XAMPP activado y la BD descargada
+si es exitoso, aparecerá el siguiente mensaje:
+Servidor corriendo en http://localhost:3000
+Conectado a Mysql
