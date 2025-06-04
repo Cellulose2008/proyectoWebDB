@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="loginstyle.css" />
+   <script>
+    function setAccion(value) {
+      document.getElementById('accion').value = value;
+    }
+  </script>
+</head>
+<body>
+  <br><br><br><br>
+  <div class="divFill">
+   <h1>¡Bienvenido a Fashionable!</h1>
+   <br>
+    <form method="POST" action="/login">
+      <input type="hidden" name="accion" id="accion">
+      <label for="usuario">Usuario</label><br><br>
+      <input type="text" name="usuario" required><br><br><br>
+
+      <label class="label2" for="contrasena">Contraseña</label><br><br>
+      <input type="password" name="contrasena" required><br><br><br><br>
+
+      <button class="buttonIngresar" type="submit" onclick="setAccion('login')">Iniciar Sesión</button>
+      <button class="buttonRegistrar" type="submit" onclick="setAccion('registro')">Registrar</button>
+    </form>
+  </div>
+</body>
+</html>
