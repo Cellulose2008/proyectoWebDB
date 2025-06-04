@@ -1,0 +1,45 @@
+  .icon{
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    border: 10px solid #000000;
+    margin-top: 75px;
+    }
+
+  .userName{
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: #e5e5e0;
+    width: 20%;
+    padding: 40px 20px;
+  }
+  
+  .sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
